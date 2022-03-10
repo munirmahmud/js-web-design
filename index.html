@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .greetings {
+            background-color: blueviolet;
+            color: black;
+            width: 200px;
+            height: 100vh;
+            position: absolute;
+            left: -200px;
+            transition: all 0.4s ease-in-out;
+        }
+        .show {
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Click Me</button>
+    <div class="greetings">
+        <h2>I am hamburger menu</h2>
+    </div>
+
+
+    <script>    
+        // ES6 / Ecma Script 2015
+    // console.log(document.getElementsByTagName('button'));
+    // console.log(document.getElementsByClassName('btn'));
+
+    
+    // DOM = Document Object Model
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const btn = document.querySelector('.btn')
+
+        // Arrow function
+
+        function changeButtonStatus() {
+            const greetings = document.querySelector('.greetings')
+
+            greetings.classList.toggle('show');
+
+            // if(greetings.classList.contains('show')) {
+            //     greetings.classList.remove('show');
+            // } else {
+            //     greetings.classList.add('show');
+            // }
+        }
+        
+        btn.addEventListener('click', changeButtonStatus)
+    })
+    
+    
+
+        // var, let, const
+        // Redeclare    
+            
+        // const myInfo = Array("Munir Mahmud", 44, false)
+        const myInfo = [
+            {
+                name: "Munir",
+                education: 'No education',
+                profession: "Unemployed",
+                myDream: "Travelling",
+            },
+            {
+                name: "Khan bahadur",
+                education: 'No education',
+                profession: "Unemployed",
+                myDream: "Travelling",
+            },
+            {
+                name: "Mahmud",
+                education: 'No education',
+                profession: "Unemployed",
+                myDream: "Travelling",
+            },
+        ]
+
+        // const person = new Object()
+        // const person = {
+        //     name: "Munir",
+        //     education: 'No education',
+        //     profession: "Unemployed",
+        //     myDream: "Travelling",
+        // }
+
+        // console.log(typeof person);
+        // console.log(myInfo);
+
+        // function strUpper(name) {
+        //     return name.toUpperCase();
+        // }
+
+        // document.querySelector('body').innerHTML = myInfo[0]
+
+
+        // function strLower(name) {
+        //     return name.toLowerCase();
+        // }
+
+        // const name = strUpper("Munir Mahmud");
+        // strUpper("Khan");
+        // strLower("Aayan");
+
+        
+        // console.log(`Hello, my name is ${name}`);
+        // Back ticks
+
+        //function call, invoke, run
+
+
+
+        // method
+        // property
+        
+        // function
+        // variable
+    </script>
+    
+</body>
+</html>
